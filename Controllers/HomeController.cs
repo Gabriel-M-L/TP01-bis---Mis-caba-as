@@ -15,7 +15,15 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+
+        Complejo complejo = new Complejo();
+        ViewBag.complejo = complejo;
         return View();
+    }
+    public IActionResult selectCabana(int ID){
+        Complejo complejo = new Complejo();
+        ViewBag.cabana = complejo.getCabana(ID);
+        return View("infoCabana");
     }
 
     public IActionResult Privacy()
