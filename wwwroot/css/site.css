@@ -29,3 +29,22 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+div{
+    border-radius: 30px;
+    background-color: #858ea0;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+div img{
+    width: 49%;
+    clear: both;
+    border-radius: 20px;
+}
+
+footer{
+    background-color: #858ea0;
+    width: 100%;
+    display: inline-block;
+}
+

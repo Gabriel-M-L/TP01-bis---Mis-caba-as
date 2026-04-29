@@ -2,5 +2,14 @@
     ViewData["Title"] = "Home Page";
 }
 <div class="text-center">
+    <h2>@ViewBag.cabana.getNombre()</h2>
+    <h3>@ViewBag.cabana.getDescripcion()</h3>
+    <h3>Capcidad de personas: @ViewBag.cabana.getCapacidad()</h3>
+    @for(int i = 0; i < ViewBag.cabana.getAmbientes().Count; i++)
+    {
+        <img src = "/imagenes/@ViewBag.cabana.getFotos()[i]">
+        <p>@ViewBag.cabana.getAmbientes()[i]</p>
+    }
+    <a href='@Url.Action("Index", "Home")'>Volver</a>
     
 </div>

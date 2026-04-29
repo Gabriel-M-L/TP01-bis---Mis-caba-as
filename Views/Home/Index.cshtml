@@ -6,7 +6,8 @@
     <h1 class="display-4">Cabañas!!!!!!!!!!!!!!</h1>
     @foreach(Cabana cabana in ViewBag.complejo.getCabanas().Values){
         <p>@cabana.getNombre()</p>
-        <p>@cabana.getDescripcion()</p>
+        <p>Capacidad de personas: @cabana.getCapacidad()</p>
+        <img src = "/imagenes/@cabana.getFotos()[0]">
         <a href='@Url.Action("selectCabana", "Home", new {ID = cabana.getID()})'>Mas informacion</a>
     }
 </div>
